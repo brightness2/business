@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+</head>
+
+<body>
+    test1 html
+    <br>
+    <table>
+        <tr>
+            <td>变量输出:</td>
+            <td>{$name} {$arr.one}</td>
+        </tr>
+        <tr>
+            <td>执行函数:</td>
+            <td>{$name|md5}</td>
+        </tr>
+        <tr>
+            <td>循环:</td>
+            <td>
+                {foreach $arr as $key=>$vo }
+                {$key}:{$vo}
+                {/foreach}
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
