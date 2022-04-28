@@ -17,3 +17,10 @@
     'middleware' => [
         'checkToken',
     ]
+
+# cookie + token 后台身份验证
+1 app/admin/config/middleware.php增加中间件别名
+2 app/admin/config/route.php文件增加，
+    'middleware' => [
+        'checkCookie',
+    ]
